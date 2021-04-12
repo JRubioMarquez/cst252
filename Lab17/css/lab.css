@@ -1,0 +1,124 @@
+/* purpose button */
+#purpose-button {
+  background-color: orange;
+}
+
+#purpose-button.star {
+  background-color: DodgerBlue;
+}
+
+/* challenge button */
+#challenge-button {
+  background-color: DodgerBlue;
+}
+
+#challenge-button.sun {
+  background-color: yellow;
+}
+
+/* result button */
+#result-button {
+  background-color: yellow;
+}
+
+#result-button.moon {
+  background-color: orange;
+}
+
+/******* Bonus Taskx ********/
+/* #output-button{
+  background:grey;
+}
+
+#output-button.output{
+  background:grey;
+} */
+div {
+  padding:10px;
+  /* background:gray; */
+  /* color:white; */
+  margin-top:10px;
+}
+
+.output1 { color:red; }
+.output2 { color:blue; }
+.output3 { color:green; }
+
+/*************************************************************************/
+h1{
+  text-align:center;
+  color: #696969;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 55px;
+}
+
+p{
+  font-family: 'Newsreader', serif;
+  margin-left: 10px;
+  font-size: 18px;
+  text-align:left;
+}
+
+/* .carimg img {
+  float: right;
+  width: 400px;
+  height: auto;
+  padding: 5px;
+} */
+
+div#content {
+  padding:30px;
+  margin: 15px;
+  background-color: MintCream;
+  border: solid 15px #ff8f5c;
+}
+
+h2{
+  text-align:left;
+  font-family: 'Garamond', serif;
+  font-size: 20px;
+  color:#696969;
+}
+
+body {
+  background-image: linear-gradient(#fcd6ff, #ffcf9e);
+  /* background-color:SeaGreen; */
+  padding:40px;
+  /* font-size: 30px; */
+}
+/*************************************************************************/
+/* javascript output */
+.input-output {
+  min-height: 40px;
+  border: solid 1px black;
+  padding: 10px;
+}
+
+#output{
+  margin:5px;
+  padding: 5px;
+  /* border: solid 1px black; */
+  /* column-width: 100px; */
+}
+
+#output p {
+  margin: 10px;
+}
+
+div{
+  display: block;
+}
+/*************************************************************************/
+/* links */
+.homelink{
+  text-align: left;
+}
+
+.sourcelink{
+  float: right;
+}
+
+.nav{
+  padding: 10px;
+  font-size: 80%;
+}
