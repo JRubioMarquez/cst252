@@ -1,34 +1,3 @@
-//URL = "https://www.boredapi.com/api/activity/"
-//URL = "https://api.kanye.rest/"
-//URL = "https://api.whatdoestrumpthink.com/api/v1/quotes/random"
-
-//  var endpoint = "http://numbersapi.com/random/year";
-// //
-//  $("#activate").click(function(){
-//     	$("#output").append("<p>Howdy!</p>");
-// //   // Using the core $.ajax() method
-//       $.ajax({
-// //       // The URL for the request
-//         url: URL.php,
-// //       // The data to send (will be converted to a query string)
-//         data: { },
-// //       // Whether this is a POST or GET request
-//         type: "GET",
-// //       // The type of data we expect back
-// //       /* dataType : "json", */
-//     })
-// //   // If the request succeeds
-//     .done(function( data ) {
-//         $("#output").append("<p>" + data + "</p>");
-//       })
-// //   // If the request fails
-//     .fail(function( xhr, status, errorThrown ) {
-//         console.log(errorThrown + " Status:" + status );
-//       });
-// //
-//   })
-
-
 //wes's code credit https://wmodes.github.io/cst252/lab19/index.html
 //URL = "https://www.boredapi.com/api/activity/"
  URL = "https://api.kanye.rest/"
