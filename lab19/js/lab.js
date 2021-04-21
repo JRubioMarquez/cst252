@@ -24,7 +24,7 @@ $("#activate").click(function(){
         // put data in webpage
         // $("#output").append("<p>" + JSON.stringify(data));
         //$("#output").append("<p>Here's what you should do when you are bored: <b>" + data.activity);
-        $("#output").append("<p>President-elect Kanye says: <b>" + data.quote);
+        $("#output").append("<p>President-elect Kanye says: <b>" + data.quote); 
         //$("#output").append("<p>The most stable smart man in the room says: <b>" + data.message);
 
     })
