@@ -48,7 +48,7 @@ $.ajax({
   $("#prev").click(function(){
     getComic(comicNum - 1);
   });
-  $("#next").click(fuction(){
+  $("#next").click(function(){
     getComic(comicNum + 1);
   });
 })
@@ -57,5 +57,5 @@ $.ajax({
     console.log("^^; Please ignore this error. We did our best!");
     console.log("Have a nice day!");
   })
-})
+}
 getComic();
