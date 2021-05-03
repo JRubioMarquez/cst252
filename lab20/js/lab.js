@@ -4,13 +4,17 @@ var URL = "https://xkcd.com/info.0.json";
 var URLpre = "https://xkcd.com/";
 var URLpost = "info.0.json";
 
+function make_safe(str) {
+  return str.replace(/'/g, '&apos;').replace(/"/g, '&quot;');
+}
+
 function getComic(num) {
   if(typeof num === 'undefined') {
     numStr = "";
   } else {
     numStr = num.toString() + "/";
   }
-}
+
 var ourURL = URLpre + numStr + URLpost;
 
 $.ajax({
@@ -20,16 +24,27 @@ $.ajax({
 
 .done(function(data){
   var imageUrl = data.img;
+
   var title = data.title;
+  console.log("orig title:", title);
+  title = make_safe(title);
+  console.log("safe title:", title);
+
   var alt = data.alt;
+  console.log("orig alt:", alt);
+  alt = make_safe(alt);
+  console.log("safe alt:", alt);
+
   var comicNum = data.num;
-  var html = `<div id="imgeblock">
+  var html = `<div id="imageblock">
       <h2>${title}</h2>
       <img src="${imageURL}" title="${alt}"><br>
-      <button id="prev">Previous</button><button id="next">Next</button>
+      <button id="prev">Previous</button>
+      <button id="next">Next</button>
       </div>`
-  console.log("My new html: ", html);
+  //console.log("My new html: ", html);
   $("#output").html(html);
+
   $("#prev").click(function(){
     getComic(comicNum - 1);
   });
@@ -38,9 +53,9 @@ $.ajax({
   });
 })
 
-.fail(function(){
-  console.log("^^; Please ignore this error. We did our best!");
-  console.log("Have a nice day!");
-})
-
+  .fail(function(){
+    console.log("^^; Please ignore this error. We did our best!");
+    console.log("Have a nice day!");
+  })
+}
 getComic();
