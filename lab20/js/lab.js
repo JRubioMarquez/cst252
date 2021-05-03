@@ -38,7 +38,7 @@ $.ajax({
   var comicNum = data.num;
   var html = `<div id="imageblock">
       <h2>${title}</h2>
-      <img src="${imageURL}" title="${alt}"><br>
+      <img src="${imageUrl}" title="${alt}"><br>
       <button id="prev">Previous</button>
       <button id="next">Next</button>
       </div>`
