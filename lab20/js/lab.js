@@ -57,5 +57,5 @@ $.ajax({
     console.log("^^; Please ignore this error. We did our best!");
     console.log("Have a nice day!");
   })
-}
+})
 getComic();
